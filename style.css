@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+    --headerHeight: 3rem;
+
+    --primaryColor: hsl(235, 21%, 21%);
+    --secondaryColor: hsl(353, 86%, 54%);
+    --white: #fff;
+    --black: #000;
+    --grey0:#edf2f4;
+    --grey1: #8d99ae;
+    --grey2: #454e56;
+    --grey3:#343a40;
+    --grey4: #2a2e35;
+    --borderRadius-sm2: 14px;
+    --boxShadow1: 0 3px 15px rgba(0,0,0,.2);
+
+    --bodyFont: 'Varela Round', sans-serif;
+
+    --bigFont: 2rem;
+    --h1Font: 1.5rem;
+    --h2Font: 1.25rem;
+    --h3Font: 1.12rem;
+    --normalFont: .93rem;
+    --smallFont: .813rem;
+    --smallerFont: .75rem;
+
+    --mediumFont: 500;
+    --semiBold: 600;
+
+    --marginb-25: .25rem;
+    --marginb-5: .5rem;
+    --marginb-75: .75rem;
+    --marginb-1: 1rem;
+    --marginb: 1.5rem;
+    --marginb2: 2rem;
+    --marginb-25: 2.5rem;
+    --marginb-3: 3rem;
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-model: 1000;
+  }
+
+/* RESPONSIVENESS */
+@media screen and (min-width: 968px) {
+    :root{
+    --bigFont: 3rem;
+    --h1Font: 2.25rem;
+    --h2Font: 1.5rem;
+    --h3Font: 1.25rem;
+    --normalFont: 1rem;
+    --smallFont: .875rem;
+    --smallerFont: .814rem;
+    }
+}
+
+/* BASE */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 0 var(--headerHeight) 0;
+    font-family: var(--bodyFont);
+    font-size: var(--normalFont);
+    background-color: var(--primaryColor);
+    color: var(--white);
+}
+
+h1, h2, h3, h4{
+    color: var(--grey1);
+    font-weight: var(--semiBold);
+
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--grey0);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* REUSABLE CSS CLASSES */
+.section{
+    padding: 2rem 0 4rem;
+}
+
+.section-title{
+    font-size: var(--h1Font);
+    text-align: center;
+}
+
+.section-subtitle{
+    display: block;
+    font-size: var(--smallFont);
+    margin-bottom: var(--marginb-3);
+    text-align: center;
+}
+
+.container{
+    max-width: 768px;
+    margin-left: var(--marginb);
+    margin-right: var(--marginb);
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
