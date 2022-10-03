@@ -5,6 +5,7 @@
 
     --primaryColor: hsl(235, 21%, 21%);
     --secondaryColor: hsl(353, 86%, 54%);
+    --secondaryColorAlt: #c1121f;
     --white: #fff;
     --black: #000;
     --grey0:#edf2f4;
@@ -244,6 +245,7 @@ img{
 
 .home-blob-img{
     width: 170px;
+    /* justify-self: center; */
 }
 
 .home-data{
@@ -286,6 +288,59 @@ img{
     font-size: 1.35rem;
 }
 
+/* BUTTONS */
 .button{
+    display: inline-block;
+    background-color: var(--secondaryColor);
+    color: var(--grey0);
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--mediumFont);
+}
+.button:hover{
+    background-color: var(--secondaryColorAlt);
+}
 
+.button-icon{
+    font-size: 1.25rem;
+    margin-left: var(--marginb-5);
+    transition: .3s;
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
+
+/* ABOUT */
+.about-img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+.about-desc{
+    text-align: center;
+    margin-bottom: var(--marginb-25);
+}
+.about-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--marginb-25);
+}
+.about-info-title{
+    font-size: var(--h2Font);
+    font-weight: var(--semiBold);
+    color: var(--white);
+}
+.about-info-title, .about-info-desc{
+    text-align: center;
+    display: block;
+}
+.about-info-desc{
+    font-size: var(--smallerFont);
+}
+.about-buttons{
+    display: flex;
+    justify-content: center;
 }
