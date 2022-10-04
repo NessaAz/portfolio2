@@ -74,7 +74,21 @@ skillsHeader.forEach((el) =>{
 //     })
 // })      
 
+
+
 //SERVICES MODAL
+const modalViews = document.querySelectorAll('services-modal'),
+      modalBtns = document.querySelectorAll('services-button'),
+      modalClose = document.querySelectorAll('services-modal-close')
+
+let modal = function (modalClick) {
+    modalViews[modalClick].classList.add('active-modal')
+}      
+
+modalBtns.forEach((modalBtn, i) =>{
+    modalBtn.addEventListener('click', () )
+})
+
 
 //PORTFOLIO SWIPER
 
