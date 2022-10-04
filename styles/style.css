@@ -603,7 +603,7 @@ img{
     margin-bottom: var(--marginb-75);
 }
 .project-button:hover , .button-icon{
-    transform: translateX(.25rem);
+    transform: translateX(.125rem);
 }
 
 /* Current Project */

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script src="https://kit.fontawesome.com/3400be60ec.js" crossorigin="anonymous"></script>
+    <title>portfolio</title>
 </head>
 <body>
     <!-- HEADER -->
@@ -155,7 +156,7 @@
                     </div>
                 </div>
                 <div class="about-buttons">
-                    <a href="/Shiundu-Developer.pdf" target="_blank" class="button button-flex">
+                    <a href="/pdf/Shiundu-Developer.pdf" target="_blank" class="button button-flex">
                        View Resume <i class="uil uil-eye button-icon"></i>
                     </a>
                 </div>
@@ -822,10 +823,10 @@
             <h2 class="section-title">projects</h2>
             <span class="section-subtitle">recent projects</span>
 
-            <div class="project-container container">
-                <div>
+            <div class="project-container container swiper-container">
+                <div class="swiper-wrapper">
                     <!-- project 1 -->
-                    <div class="project-content grid">
+                    <div class="project-content grid swiper-slide">
                         <img src="images/hustle.png" alt="space booking web app" class="project-img">
 
                         <div class="project-data">
@@ -839,7 +840,7 @@
                         </div>
                     </div>
                     <!-- project 2 -->
-                    <div class="project-content grid">
+                    <div class="project-content grid swiper-slide">
                         <img src="images/nextdoor.png" alt="neighbourhoods project" class="project-img">
 
                         <div class="project-data">
@@ -853,7 +854,7 @@
                         </div>
                     </div>
                     <!-- project 3 -->
-                    <div class="project-content grid">
+                    <div class="project-content grid swiper-slide">
                         <img src="images/yummypizza.png" alt="pizza delivery app" class="project-img">
 
                         <div class="project-data">
@@ -867,6 +868,15 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- add arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-project-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-project-icon"></i>
+                </div>
+                <!-- add pagination -->
             </div>
         </section>
 
@@ -885,6 +895,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
