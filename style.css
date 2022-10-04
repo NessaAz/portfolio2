@@ -583,9 +583,28 @@ img{
    visibility: visible;
 }
 
-
-
 /* Projects  */
+.project-container{
+    overflow: initial;
+}
+.project-content{
+    padding: 0 1.5rem;
+}
+.project-img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+.project-title{
+    font-size: var(--h3Font);
+    margin-bottom: var(--marginb-5);
+}
+.project-descr{
+    margin-bottom: var(--marginb-75);
+}
+.project-button:hover , .button-icon{
+    transform: translateX(.25rem);
+}
 
 /* Current Project */
 
