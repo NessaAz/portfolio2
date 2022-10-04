@@ -101,20 +101,20 @@ modalCloses.forEach((modalClose) =>{
 
 
 //PROJECT SWIPER
-let swiper = new swiper('.project-container', {
-    cssMode: true,
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    mousewheel: true,
-    keyboard: true,
-});
+// import Swiper from 'swiper/swiper-bundle.esm.js';
+// import 'swiper/swiper-bundle.css';
+// let swiper = new Swiper('.project-container', {
+//     cssMode: true,
+//     loop: true,
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     }
+// });
 
 //TESTIMONIAL 
 
