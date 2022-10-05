@@ -935,6 +935,12 @@ img{
     /* .home-social{
         transform: translateX(-6rem);
     } */
+    .dm{
+        visibility: hidden;
+    }
+    .contact-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .services-container{
         grid-template-columns: repeat(4, 270px);
     }
