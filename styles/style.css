@@ -813,7 +813,7 @@ img{
         order: 1;
         justify-self: center;
     }
-    .about-container, .contact-container,
+    .about-container, 
     .footer-container{
         grid-template-columns: repeat(2, 1fr);
     }
