@@ -138,4 +138,39 @@ function scrollActive() {
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+
 //BACKGROUND HEADER CHANGE
+
+
+//DARK-LIGHT THEME
+const themeButton = document.getElementById('theme-button')
+const lightTheme = 'light-theme'
+const darkTheme = 'uil-moon'
+
+//previously selected topic; if user selected
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+//obtain the current theme that the interface has by validating the dark theme
+const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'light': 'dark'
+const getCurrentIcon = () => document.body.classList.contains(darkTheme) ? 'uil-sun': 'uil-moon'
+
+
+//validate if user previously chose a topic
+if (selectedTheme){
+    //if validation was fulfilled we ask what the issue was to know if activated
+    document.body.classList[selectedTheme === 'light' ? 'add' : 'remove'](lightTheme)
+    themeButton.classList[selectedIcon === 'uil-sun' ? 'add' : 'remove'](darkTheme)
+}
+
+//activate/deactivate theme manually with button
+themeButton.addEventListener('click', () =>{
+    // add/remove dark/icon theme
+    document.body.classList.toggle(lightTheme)
+    themeButton.classList.toggle(darkTheme)
+
+    //saving the chosen theme and icon
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})

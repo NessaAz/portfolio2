@@ -2,8 +2,8 @@
 
 :root {
     --headerHeight: 3rem;
-
-    --primaryColor: #2a2c41;
+        /* dark blue 235 */
+    --primaryColor: hsl(235, 21%, 21%);
     --secondaryColor: hsl(353, 86%, 54%);
     --secondaryColorAlt: #c1121f;
     --secondaryColorAlt2: #F9B1B9;
@@ -60,6 +60,40 @@
     --smallFont: .875rem;
     --smallerFont: .814rem;
     }
+}
+
+/* light theme variables */
+body.light-theme{
+
+    --primaryColor: #EDF2F4;
+    --secondaryColor: hsl(353, 86%, 54%);
+    --secondaryColorAlt: #c1121f;
+    --secondaryColorAlt2: #F9B1B9;
+    --white: #000;
+    --whiteAlt: #2B2D42;
+    --black: #000;
+    --grey0:#161a1d;
+    --grey1: #161a1d;
+    --grey2: #454e56;
+    --grey3:#343a40;
+    --grey4: #2a2e35;
+    --containerColor: #8D99AE;
+}
+
+
+/* button dark &light */
+.nav-btns{
+    display: flex;
+    align-items: center;
+}
+.theme-change{
+    font-size: 1.25rem;
+    color: var(--white);
+    cursor: pointer;
+    margin-right: var(--marginb-1);
+}
+.theme-change:hover{
+    color: var(--secondaryColorAlt);
 }
 
 /* BASE */
