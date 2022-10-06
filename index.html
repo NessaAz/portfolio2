@@ -963,36 +963,39 @@
                     </div>
                 </div>
 
-                <form class="contact-form grid" action="https://formspree.io/f/xyyorvdg" method="post">
+                <form class="contact-form grid" action="https://formspree.io/f/xyyorvdg" method="post" id="contact-form">
                     <div class="contact-inputs grid">
                         <div class="contact-content">
 
-                            <label for="" class="contact-label">Name</label>
-                            <input type="text" class="contact-input">
+                            <label for="name" class="contact-label">Name</label>
+                            <input type="text" class="contact-input" id="name" name="name" placeholder="Your Name" required>
                         </div>
 
                         <div class="contact-content">
-                            <label for="" class="contact-label">e-mail</label>
-                            <input type="email" class="contact-input">
+                            <label for="email" class="contact-label">e-mail</label>
+                            <input type="email" class="contact-input" id="email" name="email" placeholder="Your e-mail Address" required>
                         </div>
 
                         <div class="contact-content">
-                            <label for="" class="contact-label">subject</label>
-                            <input type="text" class="contact-input">
+                            <label for="subject" class="contact-label">subject</label>
+                            <input type="text" class="contact-input" id="subject" name="subject" placeholder="Subject" required>
                         </div>
 
                         <div class="contact-content">
-                            <label for="" class="contact-label">message</label>
-                            <textarea name="" id="" cols="0" rows="6" class="contact-input"></textarea>
+                            <label for="message" class="contact-label">message</label>
+                            <textarea name="message" id="message" cols="0" rows="6" class="contact-input" required></textarea>
                         </div>
 
                         <div>
-                            <a href="" class="button button-flex">
+                            <a href="" class="button button-flex" type="submit" id="submit" name="submit" >
                                 send <i class="uil uil-message button-icon"></i>
                             </a>
                         </div>
+
                     </div>
                 </form>
+                <div id="error"></div>
+                <div id="success-msg"></div>
             </div>
         </section>
 
