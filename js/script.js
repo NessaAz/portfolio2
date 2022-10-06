@@ -204,7 +204,7 @@ const validate = (e) => {
     return false;
   }
 
-  if (message.value.length < 15) {
+  if (message.value.length < 5) {
     errorElement.innerHTML = 'Please write a longer message.';
     return false;
   }

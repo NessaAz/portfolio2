@@ -724,14 +724,17 @@ img{
     width: 40vw;
     margin: 0.125rem 0;
     font-size: 0.75rem;
-    text-transform: uppercase;
-    font-family: 'Jost';
-    color: var(--secondary-color);
+    text-transform: capitalize;
+    
+    color: var(--secondaryColorAlt);
+    font-size: var(--h3Font);
+    font-weight: var(--mediumFont);
+    margin-bottom: var(--marginb-75);
 }
   
   
 #success-msg {
-    transition-delay: 3s;
+    transition-delay: 30s;
 }
 
 
