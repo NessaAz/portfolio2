@@ -734,7 +734,7 @@ img{
     font-size: 0.75rem;
     text-transform: capitalize;
     
-    color: var(--secondaryColorAlt);
+    color: var(--whiteAlt);
     font-size: var(--h3Font);
     font-weight: var(--mediumFont);
     margin-bottom: var(--marginb-75);
@@ -742,7 +742,7 @@ img{
   
   
 #success-msg {
-    transition-delay: 30s;
+    transition-delay: 100s;
 }
 
 

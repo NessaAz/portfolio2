@@ -216,7 +216,7 @@ const validate = (e) => {
   setTimeout(function () {
     successMsg.innerHTML = '';
     document.getElementById('contact-form').reset();
-  }, 6000);
+  }, 8000);
 
   return true;
 
