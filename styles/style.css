@@ -77,7 +77,7 @@ body.light-theme{
     --grey2: #454e56;
     --grey3:#343a40;
     --grey4: #2a2e35;
-    --containerColor: #b0b7c4;
+    --containerColor: #d0d6e3;
 }
 
 
@@ -305,7 +305,9 @@ img{
 }
 
 .home-blob-img{
-    width: 170px;
+    width: 50px;
+    height: 300px;
+    border-radius: 50%;
     /* justify-self: center; */
 }
 
@@ -434,7 +436,7 @@ img{
 }
 .skills-icon, .skills-arrow{
     font-size: 2rem;
-    color: var(--white);
+    color: var(--secondaryColor);
 }
 .skills-icon{
     margin-right: var(--marginb-75);
