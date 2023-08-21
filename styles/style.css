@@ -397,6 +397,7 @@ img{
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+    border-radius: 10%;
 }
 .about-desc{
     text-align: center;
