@@ -216,7 +216,7 @@ const validate = (e) => {
   setTimeout(function () {
     successMsg.innerHTML = '';
     document.getElementById('contact-form').reset();
-  }, 8000);
+  }, 2000);
 
   return true;
 
@@ -236,6 +236,6 @@ $('button#submit').click(function(){
         alert("Please fill the form")
     }
     else {
-        alert(`${name}, I have received your message.Thank you for reaching out.`)
+        alert(`${name}, I have received your message. Thank you for reaching out.`)
     }
 })
